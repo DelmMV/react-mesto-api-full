@@ -76,7 +76,7 @@ class Api {
 }
 
 export const api = new Api({
-  url: "http://api.delm.nomoredomains.sbs/",
+  url: "https://api.delm.nomoredomains.sbs/",
   headers: {
     "content-type": "application/json",
   },
