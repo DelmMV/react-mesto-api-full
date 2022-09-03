@@ -1,0 +1,11 @@
+.popup__error_position_linkPhoto {
+  top: 150px;
+  left: 36px;
+}
+
+@media screen and (max-width: 500px) {
+  .popup__error_position_linkPhoto {
+    top: 170px;
+    left: 22px;
+  }
+}

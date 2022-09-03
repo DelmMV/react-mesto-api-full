@@ -1,0 +1,14 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  grid-template-rows: max-content;
+  padding: calc(100vw/(1280/45)) 0 calc(100vw/(1280/41));
+  align-items: end;
+  border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    padding: calc(100vw/(320/28)) 0 calc(100vw/(320/27));
+  }
+}

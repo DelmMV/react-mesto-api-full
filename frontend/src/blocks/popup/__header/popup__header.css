@@ -1,0 +1,17 @@
+.popup__header {
+  margin: 34px 64px 0 36px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  width: 330px;
+}
+
+@media screen and (max-width: 500px) {
+  .popup__header {
+    margin: 25px auto 75px;
+    font-size: 18px;
+    line-height: 22px;
+    width: 238px;
+  }
+}

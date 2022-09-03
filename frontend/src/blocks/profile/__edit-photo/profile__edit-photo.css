@@ -1,0 +1,34 @@
+.profile__edit-photo {
+    position: relative;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    object-fit: cover;
+    width: 127.5px;
+    height: 127.5px;
+    border-radius: 50%;
+    background-size: cover;
+  }
+
+  .profile__edit-photo::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgb(0, 0, 0, 0.8) url(../../../images/Pen.png) no-repeat center;
+    background-size: 26px 26px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+  }
+
+  .profile__edit-photo:hover::after {
+    opacity: 1;
+  }
+
+  @media (max-width:880px) {
+    .profile__edit-photo {
+      margin: calc(100vw/(320/38.25)) auto calc(100vw/(320/22.25));
+    }
+  }

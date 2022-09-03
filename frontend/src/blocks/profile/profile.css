@@ -1,0 +1,16 @@
+.profile {
+  display: grid;
+  padding: calc(100vw/(1280/36.25)) 0 0;
+  grid-template-columns: repeat(2, max-content) auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 880px) {
+  .profile {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 320px;
+  }
+}
