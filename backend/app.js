@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const {
@@ -20,8 +21,9 @@ const { requestLogger, errorLogger } = require('./middlewares/logger');
 require('dotenv').config();
 
 const app = express();
-mongoose.connect('mongodb://127.0.0.1:27017/mestodb');
+app.use(cors());
 
+mongoose.connect('mongodb://127.0.0.1:27017/mestodb');
 const { PORT = 3000 } = process.env;
 
 app.use(bodyParser.json());
